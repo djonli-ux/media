@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+}
+
+.content {
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: aliceblue;
+    background-color: rgb(2, 191, 255);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.content > p {
+    transition: transform 2s ease-in-out;
+    margin: 5px;
+}
+
+.content > p:hover {
+    color: grey;
+    transform: rotate(360deg) translateX(1000px);
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        justify-content: center;
+    }
+}
